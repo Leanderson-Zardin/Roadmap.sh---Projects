@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Básico - Contato</title>
+  <meta name="author" content="Leanderson Zardin">
+  <meta name="description" content="Site HTML básico - Página de Contato">
+  <meta name="og:title" content="Site Basico - Contato">
+  <meta name="og:type" content="website">
+  <meta name="og:description" content="Site HTML básico - Página de Contato">
+  <style>
+    /*GERAL*/
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 30px auto;
+      max-width: 900px;
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    /*HEADER*/
+    nav, header ul {
+      display: flex;
+    }
+
+    nav {
+      justify-content: space-between;
+    }
+
+    header ul li {
+      list-style: none;
+    }
+
+    header ul {
+      gap: 20px;
+    }
+
+    header section {
+      padding: 100px 0px;
+      text-align: center;
+    }
+
+    /*MAIN*/
+    main form {
+      margin: 0px auto;
+      max-width: 400px;
+      border: 1px solid black;
+      padding: 10px 15px;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+
+    main form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    main form input {
+      width: 100%;
+    }
+
+    main form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    main form textarea {
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+    }
+
+    /*FOOTER*/
+    footer div {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <p>Leanderson Zardin</p>
+      <ul>
+        <li>
+          <a href="index.html">Início</a>
+        </li>
+        <li>
+          <a href="projetos.html">Projetos</a>
+        </li>
+        <li>
+          <a href="artigos.html">Artigos</a>
+        </li>
+        <li>
+          <a href="#">Contato</a>
+        </li>
+      </ul>
+    </nav>
+    <section>
+      <h1>Contacte-nos | Frontend</h1>
+      <p>Preencha o formulário</p>
+    </section>
+  </header>
+  <main>
+    <hr>
+    <section>
+      <form>
+        <div>
+          <label for="name">Nome:</label>
+          <input type="text" required id="name">
+        </div>
+        <div>
+          <label for="email">E-mail:</label>
+          <input type="email" required id="email">
+        </div>
+        <div>
+          <label for="nascimento">Data de Nascimento:</label>
+          <input type="date" required id="nascimento">
+        </div>
+        <div>
+          <label for="mensagem">Mensagem:</label>
+          <textarea name="mensagem" id="mensagem"></textarea>
+        </div>
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <p>
+        <b>Todos os direitos são reservados © 2025</b>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
