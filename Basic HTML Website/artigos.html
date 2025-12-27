@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site Básico - Projetos</title>
+  <title>Site Básico - Artigos</title>
   <meta name="author" content="Leanderson Zardin">
-  <meta name="description" content="Site HTML básico - Página de Projetos">
-  <meta name="og:title" content="Site Basico - Projetos">
+  <meta name="description" content="Site HTML básico - Página de Artigos">
+  <meta name="og:title" content="Site Basico - Artigos">
   <meta name="og:type" content="website">
-  <meta name="og:description" content="Site HTML básico - Página de Projetos">
+  <meta name="og:description" content="Site HTML básico - Página de Artigos">
   <style>
     /*GERAL*/
     * {
@@ -49,30 +49,32 @@
 
     /*MAIN*/
     main section {
-      display: flex;
-      width: 100%;
-      gap: 20px;
       margin-top: 15px;
-    }
-
-    main article {
-      padding: 15px;
-      text-align: center;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 20px;
+    }
+
+    main section article {
+      display: flex;
+      gap: 20px;
       border: 1px solid black;
       border-radius: 5px;
     }
 
-    main figure {
-      width: 100%;
-      border: 1px solid black;
+    main section article div {
+      align-self: center;
     }
 
-    main figure img {
-      display: block;
+    main section article figure {
+      width: 200px;
+      
+    }
+    main section article figure img {
       width: 100%;
+      display: block;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
     }
 
     /*FOOTER*/
@@ -91,10 +93,10 @@
           <a href="index.html">Início</a>
         </li>
         <li>
-          <a href="#">Projetos</a>
+          <a href="projetos.html">Projetos</a>
         </li>
         <li>
-          <a href="artigos.html">Artigos</a>
+          <a href="#">Artigos</a>
         </li>
         <li>
           <a href="#">Contato</a>
@@ -102,8 +104,8 @@
       </ul>
     </nav>
     <section>
-      <h1>Projetos Frontend</h1>
-      <p>Exemplos de projetos práticos</p>
+      <h1>Artigos Frontend</h1>
+      <p>Todos escritos pela comunidade</p>
     </section>
   </header>
   <main>
@@ -111,24 +113,30 @@
     <section>
       <article>
         <figure>
-          <img src="img/projeto.jpg" alt="imagem de programação ilustrativa">
+          <img src="img/projeto.jpg" alt="Imagem meramente ilustrativa">
         </figure>
-        <h2>Projeto 1</h2>
-        <p>Idealizado para fins acadêmicos, mas que poderia ser escalado para algo mais profissional.</p>
+        <div>
+          <h2>IA e o futuro</h2>
+          <p>Saiba quais serão os impactos da Inteligência Artificial no futuro da humanidade</p>
+        </div>
       </article>
       <article>
         <figure>
-          <img src="img/projeto.jpg" alt="imagem de programação ilustrativa">
+          <img src="img/projeto.jpg" alt="Imagem meramente ilustrativa">
         </figure>
-        <h2>Projeto 2</h2>
-        <p>Idealizado para fins acadêmicos, mas que poderia ser escalado para algo mais profissional.</p>
+        <div>
+          <h2>Desenvolvimento Web</h2>
+          <p>Conheça tudo sobre as ferramentas HTML, CSS e Javascript</p>
+        </div>
       </article>
       <article>
         <figure>
-          <img src="img/projeto.jpg" alt="imagem de programação ilustrativa">
+          <img src="img/projeto.jpg" alt="Imagem meramente ilustrativa">
         </figure>
-        <h2>Projeto 3</h2>
-        <p>Idealizado para fins acadêmicos, mas que poderia ser escalado para algo mais profissional.</p>
+        <div>
+          <h2>Programação</h2>
+          <p>Torne-se um DEV que pensa além do código.</p>
+        </div>
       </article>
     </section>
   </main>
