@@ -5,3 +5,7 @@ The goal of this project is to teach you about positioning and layout in CSS. Be
 ## Resultado
 
 ![Resultado do exercício proposto](image.png)
+
+---
+
+### [Link do Projeto no Roadmap.sh](https://roadmap.sh/projects/testimonial-cards)
