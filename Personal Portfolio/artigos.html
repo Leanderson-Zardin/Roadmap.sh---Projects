@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Básico - Artigos</title>
+  <meta name="author" content="Leanderson Zardin">
+  <meta name="description" content="Portfolio pessoal (Projeto)">
+  <meta name="og:title" content="Site Basico - Artigos">
+  <meta name="og:type" content="website">
+  <meta name="og:description" content="Portfolio pessoal (Projeto)">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /*MAIN*/
+    main section {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    main section article {
+      display: flex;
+      gap: 20px;
+      border: 1px solid var(--text-color);
+      border-radius: 5px;
+    }
+
+    main section article:hover {
+      cursor: pointer;
+    }
+
+    main section article div {
+      align-self: center;
+      width: 100%;
+    }
+
+    main section article figure {
+      width: 200px;
+    }
+    main section article figure img {
+      width: 100%;
+      display: block;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+
+    /* h2 {
+      font-size: clamp(14px, 4vw, 24px);
+    } */
+
+    main p{
+      font-size: clamp(12px, 2vw, 16px);
+    }
+
+    @media (max-width: 580px) {
+      main section article figure {
+        display: none;
+      }
+
+      main section article {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <p>Leanderson Zardin</p>
+      <ul>
+        <li>
+          <a href="index.html">Início</a>
+        </li>
+        <li>
+          <a href="projetos.html">Projetos</a>
+        </li>
+        <li>
+          <a href="#">Artigos</a>
+        </li>
+        <li>
+          <a href="contato.html">Contato</a>
+        </li>
+        <li class="dark-mode-list">
+          <img src="img/dark-mode.svg" alt="">
+        </li>
+      </ul>
+    </nav>
+    <section>
+      <h1>Artigos Frontend</h1>
+      <p>Todos escritos pela comunidade</p>
+    </section>
+  </header>
+  <main>
+    <hr>
+    <section>
+      <article>
+        <figure>
+          <img src="img/projeto.jpg" alt="Imagem meramente ilustrativa">
+        </figure>
+        <div>
+          <h2>IA e o futuro</h2>
+          <p>Saiba quais serão os impactos da Inteligência Artificial no futuro da humanidade</p>
+        </div>
+      </article>
+      <article>
+        <figure>
+          <img src="img/projeto.jpg" alt="Imagem meramente ilustrativa">
+        </figure>
+        <div>
+          <h2>Desenvolvimento Web</h2>
+          <p>Conheça tudo sobre as ferramentas HTML, CSS e Javascript</p>
+        </div>
+      </article>
+      <article>
+        <figure>
+          <img src="img/projeto.jpg" alt="Imagem meramente ilustrativa">
+        </figure>
+        <div>
+          <h2>Programação</h2>
+          <p>Torne-se um DEV que pensa além do código.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <p>
+        <b>Todos os direitos são reservados © 2025</b>
+      </p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
